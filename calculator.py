@@ -14,5 +14,5 @@ while True:
    print('zero cannot be divided')
   else: 
    print(num1 / num2) 
-else:
- print("invalidtry again!")  
+ else:
+   print("invalid try again!")  
