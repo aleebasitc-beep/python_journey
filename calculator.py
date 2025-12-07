@@ -1,18 +1,22 @@
 print('---Welcome to the calculator---')
 while True:
  num1 = int(input('enter number: '))
- choose = input('choose (+, -, *, /): ')
  num2 = int(input('enter number: '))
- if choose == "+":
-  print(num1 + num2)
- elif choose == "-":
-  print(num1 - num2)
- elif choose == "*":
-  print(num1 * num2)
- elif choose == "/":
+ print("Operator: (+, -, /, *) or 'q' to quit: ")
+ op = input('choose an Operator: ')
+ if op == "+":
+  print("Result: ", num1 + num2)
+ elif op == "-":
+  print("Result: ", num1 - num2)
+ elif op == "*":
+  print("Result: ", num1 * num2)
+ elif op == "/":
   if num2 == 0:
-   print('zero cannot be divided')
+   print('Error: zero cannot be divided')
   else: 
-   print(num1 / num2) 
+   print("Result: ", num1 / num2) 
+ elif op == "q":
+  print("Exiting calculator...\nThankyou for using!")
+  break
  else:
    print("invalid try again!")  
